@@ -21,6 +21,7 @@ camera.position.set(0, 1, 5);
 //renderer
 const renderer = new THREE.WebGLRenderer({ antialias: true });
 renderer.setSize(window.innerWidth, window.innerHeight);
+renderer.setPixelRatio(window.devicePixelRatio);
 document.body.appendChild(renderer.domElement);
 
 //orbit controls
@@ -34,8 +35,9 @@ loader.load(
  "/iphone_16_-_free.glb",
   (gltf) => {
     iphone = gltf.scene; 
-    iphone.scale.setScalar(0.3);
+    iphone.scale.setScalar(0.15);
     scene.add(iphone);
+  iphone.position.set(0, 0, 0);
   },
   undefined,
   (error) => {
@@ -82,4 +84,5 @@ function animate() {
   controls.update();
 }
 animate();
+
 
