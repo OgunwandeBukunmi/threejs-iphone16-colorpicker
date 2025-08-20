@@ -31,7 +31,7 @@ controls.dampingFactor = 0.01;
 //content
 const loader = new GLTFLoader();
 loader.load(
-  "assets/iphone_16_-_free.glb",
+ "/iphone_16_-_free.glb",
   (gltf) => {
     iphone = gltf.scene; 
     iphone.scale.setScalar(0.3);
@@ -63,7 +63,7 @@ scene.add(ambient);
 
 // color input event
 document.getElementById("color").addEventListener("input", (e) => {
-  iphoneColor = e.target.value; // 👈 this will be a hex string like "#ff0000"
+  iphoneColor = e.target.value; 
   setIphoneColor(iphoneColor);
 });
 
@@ -82,3 +82,4 @@ function animate() {
   controls.update();
 }
 animate();
+
