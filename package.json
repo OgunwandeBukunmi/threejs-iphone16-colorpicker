@@ -1,0 +1,16 @@
+{
+  "dependencies": {
+    "three": "^0.179.1"
+  },
+  "name": "threejs-iphone16-model",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}
