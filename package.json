@@ -1,17 +1,16 @@
 {
   "dependencies": {
-    "three": "^0.179.1"
+    "three": "^0.179.1",
+    "vite": "^7.1.3"
   },
   "name": "threejs-iphone16-model",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
-  "devDependencies": {},
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "dev" : "vite",
-    "build" : "vite build"
-
+    "dev": "vite",
+    "build": "vite build"
   },
   "keywords": [],
   "author": "",
