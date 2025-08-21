@@ -35,7 +35,7 @@ loader.load(
  "/iphone_16_-_free.glb",
   (gltf) => {
     iphone = gltf.scene; 
-    iphone.scale.setScalar(0.15);
+    iphone.scale.setScalar(0.3);
     scene.add(iphone);
   iphone.position.set(0, 0, 0);
   },
@@ -84,5 +84,6 @@ function animate() {
   controls.update();
 }
 animate();
+
 
 
